@@ -1,118 +1,154 @@
-REPTE: MALWARE I PROGRAMARI ANTIMALWARE
-Instruccions generals
-Molt important
-Poseu el nom i cognoms al document i copieu l'enunciat. Poseu les preguntes ressaltades i la resposta a sota.
+# REPTE: MALWARE I PROGRAMARI ANTIMALWARE
 
-Responeu a totes les preguntes, si cal cercant informació als apunts del mòdul, als manuals de les aplicacions, fitxers d'ajuda i "man" i si no es troba la solució, fins i tot a Internet com a últim recurs.
+## Marc jurado
 
-Abans de començar feu un "snapshot" o instantània de la maquina virtual. Això farà que l'estat actual de la màquina virtual es guardi i pugueu fer tots els canvis que vulgueu sense por de fer malbé alguna cosa. Poseu-li de nom "Abans de (l'acció que aneu a fer)...". En acabar, haureu de revertir aquesta instantània per tornar a l'estat anterior.
+---
 
-En general, heu de comprovar SEMPRE que els canvis de configuració que feu produeixen l'efecte desitjat amb el conjunt de proves necessari.
+## Instruccions generals
 
-Referències i ajuda
-Als apunts de la secció de malware a la teoria.
-Win 11 ISO disponible a la comuna.
-Mesures a prendre si ens ataca ransomware i negociador:
-Mesures de seguretat: https://www.lmgsecurity.com/download/655360/
-https://www.groupsense.io/services/ransomware-negotiation
-Objectius
-L'objectiu d'aquesta pràctica és comprovar com funciona el malware i treballar amb programari per a protegir-se del malware.
+**Molt important**
 
-Activitats
-Verificar el funcionament d'un programari antimalware
-El navegador web de Windows porta un tipus de detecció de malware i/o de llocs web potencialment perillosos i blocar la baixada de l'arxiu, anomenada Smart Screen. Altres navegadors com Chrome, Firefox, Opera, etc. disposen de tecnologies Cal desactivar aquesta protecció antimalware per a fer proves:
+- Poseu el nom i cognoms al document.
+- Copieu l’enunciat.
+- Poseu les preguntes ressaltades i la resposta a sota.
+- Responeu a totes les preguntes, si cal cercant informació als apunts del mòdul, manuals, fitxers d’ajuda (`man`) o, com a últim recurs, a Internet.
+- Abans de començar feu un **snapshot (instantània)** de la màquina virtual.
+  - Nom del snapshot: **"Abans de (l'acció que aneu a fer)"**
+- En acabar cada prova, revertiu la instantània.
+- Comproveu **sempre** que els canvis produeixen l’efecte desitjat.
 
-Desactivar Smart Screen
+---
 
-Podem comprovar el funcionament d'antimalware fent servir programari específic o amb fitxers amb malware real (no recomanat).
+## Referències i ajuda
 
-Seguiu les instruccions de l'enllaç que trobareu a https://www.eicar.org per a obtenir una còpia del test EICAR.
+- Apunts del mòdul (secció de malware)
+- ISO de Windows 11 (comuna)
+- Mesures davant ransomware:
+  - https://www.lmgsecurity.com/download/655360/
+  - https://www.groupsense.io/services/ransomware-negotiation
 
-Pot ser que hagueu de desactivar de forma temporal el detector del navegador web i el de Windows per a poder baixar-lo. Expliqueu com es fa.
-Activeu i comproveu si el detecta l'antimalware escollit.
-Torneu a desactivar la detecció en temps real. Proveu ara a tornar a baixar i a amagar el virus EICAR dintre un arxiu comprimit en formats diferents. Podeu fer servir eines com winzip, winrar o 7zip per comprimir el fitxer. Torna a activar l'antimalware. Indica en cada cas si l'antimalware detecta l'amenaça:
+---
 
- zip
- tar
- 7zip
-Sistemes protecció Windows 11
-Quines proteccions incorporar Windows 11 a la seccció de "Protección antivirus y contra amenazas"?
+## Objectius
 
-Quines opcions tenim a "Control de aplicaciones y navegador"?
+L’objectiu d’aquesta pràctica és:
+- Comprovar el funcionament del malware
+- Treballar amb programari de protecció antimalware
+- Analitzar mecanismes de protecció contra ransomware a Windows 11
 
-Investigueu quines opcions específiques hi ha per la protecció contra ransomware a Windows 11.
+---
 
-Prova pràctica de protecció contra Ransomware
-Ara comprovarem el funcionacionament específic de les proteccions contra ransomware, feu el següent:
+## Activitat 1: Verificació del funcionament d’un programari antimalware
 
-Afegiu dins la carpeta "Documents" uns quants arxius TXT.
+### Desactivació de SmartScreen
 
-Desactiveu, si està activada prèviament, la protecció contra ransomware.
+El navegador web de Windows incorpora **SmartScreen**, un sistema de detecció de llocs i fitxers potencialment perillosos.
 
-Descarregeu el fitxer de prova de ransomware de https://github.com/JoelGMSec/PSRansom. Es tracta d'un script de PowerShell que simula el comportament d'un ransomware. Com per defecte, Windows 11 restringeix l'execució d'scripts de PowerShell, haureu de canviar la política d'execució per permetre-ho, obrint una finestra de PowerShell com a administrador i executant la següent ordre:
+**Pregunta:**  
+**Expliqueu com desactivar SmartScreen a Windows 11 i al navegador.**
 
+**Resposta:**  
+_(Resposta de l’alumne)_
+
+---
+
+### Test EICAR
+
+Seguiu les instruccions de https://www.eicar.org per descarregar el fitxer de prova EICAR.
+
+Pot ser necessari desactivar temporalment:
+- Protecció del navegador
+- Antimalware de Windows
+
+**Pregunta:**  
+**Expliqueu com heu desactivat temporalment la protecció del navegador i de Windows Defender.**
+
+**Resposta:**  
+_(Resposta de l’alumne)_
+
+---
+
+### Detecció del fitxer EICAR
+
+1. Activeu l’antimalware.
+2. Comproveu si detecta el fitxer EICAR.
+
+**Pregunta:**  
+**L’antimalware detecta el fitxer EICAR? Quin missatge mostra?**
+
+**Resposta:**  
+_(Resposta de l’alumne)_
+
+---
+
+### EICAR comprimit
+
+1. Desactiveu la detecció en temps real.
+2. Comprimiu el fitxer EICAR en diferents formats.
+3. Torneu a activar l’antimalware.
+
+**Indiqueu si l’amenaça és detectada en cada cas:**
+
+- **ZIP:**  
+  _(Resposta)_
+
+- **TAR:**  
+  _(Resposta)_
+
+- **7ZIP:**  
+  _(Resposta)_
+
+---
+
+## Activitat 2: Sistemes de protecció de Windows 11
+
+### Protecció antivirus i contra amenaces
+
+**Pregunta:**  
+**Quines proteccions incorpora Windows 11 a la secció "Protección antivirus y contra amenazas"?**
+
+**Resposta:**  
+_(Resposta de l’alumne)_
+
+---
+
+### Control d’aplicacions i navegador
+
+**Pregunta:**  
+**Quines opcions hi ha a "Control de aplicaciones y navegador"?**
+
+**Resposta:**  
+_(Resposta de l’alumne)_
+
+---
+
+### Protecció contra ransomware
+
+**Pregunta:**  
+**Quines opcions específiques hi ha per la protecció contra ransomware a Windows 11?**
+
+**Resposta:**  
+_(Resposta de l’alumne)_
+
+---
+
+## Activitat 3: Prova pràctica de protecció contra ransomware
+
+### Preparació
+
+1. Afegiu diversos fitxers `.txt` dins la carpeta **Documents**.
+2. Desactiveu la protecció contra ransomware (si està activa).
+
+---
+
+### PSRansom (simulació de ransomware)
+
+Repositori:  
+https://github.com/JoelGMSec/PSRansom
+
+Canvieu la política d’execució de PowerShell:
+
+```powershell
 Set-ExecutionPolicy -ExecutionPolicy unrestricted
-Obre una consola de PoweShell a la carpeta on hagis descarregat l'script i executa'l amb la següent ordre:
 
-.\PSRansom.ps1 -e C:\Users\%USERNAME%\Documents -s 127.0.0.1 -p 80 -x
-Normalment enviaria les dades xifrades a un servidor extern (IP i port) però per fer la prova de concepte, no fem aquesta part.
 
-PSRansom
-
-Comproveu com el contingut de la carpeta "Documents" ha estat xifrat. Veieu com s'ha creat un arxiu anomenat "READ_ME.txt" que incloula clau clau de recuperació.
-
-Com és un ransomware de prova, ens permet desxifrar els fitxers. Torneu a obrir PowerShell i executeu l'script amb la següent ordre per desxifrar els fitxers:
-
-.\PSRansom.ps1 -d C:\Users\%USERNAME%\Documents -k clau
-Ara, activeu la protecció contra ransomware. Comproveu que la carpeta "Documents" està protegida i torneu a executar l'script.
-
-Comproveu que els fitxers de la carpeta "Documents" NO han estat xifrats. Observa l'alerta que es genera a l'antimalware.
-
-Atacs de Ransomware: WannaCry
-Llegiu la informació sobre WannaCry https://www.avg.com/es/signal/wannacry-ransomware-what-you-need-to-know i busqueu informació als enllaços dels projectes antiransomware per contestar les preguntes següents:
-
-Expliqueu quins són els factors que fan que WannaCry es propagui tan ràpid. Expliqueu què vol dir.
-
-Quina vulnerabilitat en concret es fa servir? Busqueu el CVE associat. És molt greu?
-
-S'ha de pagar el rescat demanat? Per què? Busqueu per internet a veure si trobeu alguna empresa negociadora de rescats i com funciona. Això s'està fent, tot i que no se sol recomanar...
-
-Quines mesures podem aplicar si volem PREVENIR un atac de Ransomware abans que passi?
-
-Quines mesures aplicarem si JA HEM SOFERT un atac de WannaCry i no hem aplicat les mesures de prevenció o ho hem fet parcialment?
-
-Prova pràctica de WannaCry
-ATENCIÓ: Els següent pas és perillós. Seguiu les instruccions de forma estricta.
-
-MAI ho heu de fer amb un equip de producció (màquina física o de la feina o de les pràctiques). En cas contrari, es pot incórrer en delictes tipificats al codi Penal amb penes que poden suposar multes i fins i tot presó.
-
-Es declina tota responsabilitat en el cas que aquesta informació sigui utilitzada amb finalitats il·lícites o delictives. També es declina tota responsabilitat en cas de destrucció total o parcial de dades per fer-ho en un entorn diferent de l'indicat.
-
-Feu una instantània o snapshot de la màquina virtual, anomenada "Abans del virus".
-
-Poseu alguns arxius reals (els podeu crear o baixar d'Internet)en una carpeta a dins de Documents:
-
-Algun document de text (.txt)
-Algunes imatges (.jpg, .png)
-Algun documents de Word (.docx)
-Algun arxiu PDF (.pdf)
-Un fitxer comprimit amb els arxius anteriors (.zip)
-Un fitxer compromit amb els arxius anteriors (.zip) però protegit amb contrasenya.
-Descarregueu de https://github.com/ytisf/theZoo el malware de tipus Ranswomware "WannaCry".
-
-Descomprimiu el .zip que està protegit amb contrasenya. L'antimalware no pot descomprimir el fitxer per mirar a dins perquè té contrasenya. La contrasenya és "infected". Un cop descomprimit, executeu el fitxer .exe de WannaCry i observeu què passa.
-
-Comproveu si el vostre antimalware el detecta i quin missatge dóna.
-Si no detecta res, mireu d'escanejar el fitxer amb botó dret, escollir opció analitzar.
-Aneu amb compte, és un virus real.
-Desactivem les proteccions en temps real de l'antimalware i tornem a descomprimir el fitxer.
-
-Finalment, envieu un fitxer .ZIP que NO tingui contrasenya (si no no es pot escanejar) a https://www.virustotal.com i https://opentip.kaspersky.com/ per comprovar quins antivirus dels que prova detecten virus al fitxer i què detecten. Indiqueu quins són els que no ho fan.
-
-Ara, a la màquina virtual, amb interfície de xarxa desconnectada, sense tenir cap carpeta compartida ni tenir Guest Additions:
-
-Desactiveu l'antimalware
-Executeu l'executable WannaCry.
-Documenteu el missatge on es demana el rescat.
-Comproveu quins fitxers s'han xifrat. Afecta a tots els fitxers o només a alguns tipus?
-Un cop heu documentat aquesta part, apagueu la màquina virtual i torneu a l'instantània "Abans del virus".
