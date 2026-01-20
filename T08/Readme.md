@@ -2,7 +2,7 @@
 
 ## Marc jurado
 
-## per veure el resultat de la tasca: [(guia.md)]
+## per veure el resultat de la tasca: 
 ---
 
 ## Instruccions generals
@@ -151,6 +151,7 @@ Canvieu la política d’execució de PowerShell:
 
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy unrestricted
+
 
 
 
