@@ -1,5 +1,7 @@
 # T05 – Instal·lació del domini (Active Directory)
 
+[solucio de la tasca](SOLUCIO.md)
+
 ## Introducció
 
 Com a continuació de la tasca **T04 – Instal·lació de Windows Server 2025**, es procedeix al desplegament del **Directori Actiu (Active Directory Domain Services)** sobre la màquina virtual creada prèviament.
