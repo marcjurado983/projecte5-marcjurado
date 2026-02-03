@@ -1,0 +1,1 @@
+# Aqui pots veure la tasca de vulnerabilitat: https://docs.google.com/document/d/1NveTnayvgWo4zTU1iw5nVBV63YjgjjlVg9wiRU2Op1s/edit?usp=sharing
