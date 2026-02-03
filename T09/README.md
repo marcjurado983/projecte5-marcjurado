@@ -1,6 +1,7 @@
 # T09: Seguretat — Les vulnerabilitats dels sistemes
 
-[solucio de la tasca](SOLUCIO.md)
+
+# aqui pots veure la solució de la tasca de vulnerabilitats: 
 
 # Introducció
 
