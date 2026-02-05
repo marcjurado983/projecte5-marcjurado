@@ -1,0 +1,1 @@
+AQUI ESTA LA GUIA DE L'ACTIVITAT: https://docs.google.com/document/d/1leWWIEYVS-CYYzQcGs_MuGOJG4ZVjX1Os4gJUvgxDMo/edit?usp=sharing
