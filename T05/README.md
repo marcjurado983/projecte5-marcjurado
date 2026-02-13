@@ -85,19 +85,5 @@ A més, aquesta instal·lació serveix com a **Prova de Concepte (PoC)** per pod
 
 Per facilitar futurs desplegaments, s’ha creat un **script PowerShell** que automatitza el procés d’instal·lació del Directori Actiu i la promoció del servidor.
 
-### Exemple d’script PowerShell
 
-```powershell
-Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
-
-Import-Module ADDSDeployment
-
-Install-ADDSForest `
-    -DomainName "translogicXX.test" `
-    -DomainNetbiosName "TRANSLOGIC" `
-    -ForestMode Win2025 `
-    -DomainMode Win2025 `
-    -InstallDNS `
-    -SafeModeAdministratorPassword (Read-Host -AsSecureString "DSRM Password") `
-    -Force
 
